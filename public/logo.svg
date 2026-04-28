@@ -1,0 +1,35 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 64 64"
+  width="64"
+  height="64"
+  role="img"
+  aria-label="Yetorix Y-symbol"
+>
+  <defs>
+    <linearGradient id="yetorixGradient" x1="0" y1="0" x2="64" y2="64" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#7B61E4" />
+      <stop offset="100%" stop-color="#FF6B4A" />
+    </linearGradient>
+    <linearGradient id="yetorixWaveGradient" x1="14" y1="40" x2="50" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF6B4A" />
+      <stop offset="100%" stop-color="#7B61E4" />
+    </linearGradient>
+  </defs>
+
+  <!-- Y-shape: two upper arms meeting in the middle, single stem dropping down. -->
+  <g fill="none" stroke="url(#yetorixGradient)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M14 12 L32 34 L50 12" />
+    <path d="M32 34 L32 52" />
+  </g>
+
+  <!-- Waveform line through the stem — three pulses representing the sonic track. -->
+  <path
+    d="M18 44 Q22 38 26 44 T34 44 T42 44 T50 44"
+    fill="none"
+    stroke="url(#yetorixWaveGradient)"
+    stroke-width="2.4"
+    stroke-linecap="round"
+    opacity="0.92"
+  />
+</svg>
