@@ -25,6 +25,14 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: TITLE,
   description: DESCRIPTION,
+  // FURY PR #1 follow-up: drop the favicon.ico 404 by serving the
+  // existing Y-symbol SVG as the tab icon. Single SVG handles every
+  // browser scaling target without us shipping multiple raster sizes.
+  icons: {
+    icon: [{ url: "/logo.svg", type: "image/svg+xml" }],
+    shortcut: "/logo.svg",
+    apple: "/logo.svg",
+  },
   openGraph: {
     title: TITLE,
     description: "Coming Soon",
